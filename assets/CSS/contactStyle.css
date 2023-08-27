@@ -1,0 +1,248 @@
+/*=========================================================================================================
+ ===========================================CONTACT PAGE STYLE=============================================
+ */
+html {
+  background-color: whitesmoke;
+}
+
+/* //////////////////////////// First Article Top Style \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ */
+.contact-head {
+  text-align: center;
+  color: darkgreen;
+  font-size: 35px;
+  padding: 10px;
+  text-transform: capitalize;
+}
+
+.first-article {
+  margin-top: 70px;
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0.2) 25%,
+    rgba(255, 255, 255, 0.2) 75%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.1),
+    inset 0 0 1px rgba(255, 255, 255, 0.6);
+  color: green;
+}
+
+.contact-message {
+  text-align: center;
+  padding: 20px;
+  padding-top: 0;
+}
+
+/* //////////////////////////// End of First Article Top Style \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ */
+
+/*========================================= Form Style =========================================== */
+
+.contact-fieldset {
+  color: darkgreen;
+}
+
+#legend {
+  text-align: center;
+}
+
+.contact-field {
+  /* width: 39%; */
+  padding: 50px;
+  margin: 20px;
+  border: 1px solid;
+  box-shadow: 3px 6px rgba(55, 66, 59, 0.5);
+  background: whitesmoke;
+  color: green;
+}
+
+#big-fieldset {
+  border-radius: 40px;
+  border: 3px solid green;
+  background: rgba(255, 255, 0, 0.562);
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-bottom: 50px;
+}
+
+[href="tel:+233 000 000 0000"],
+[href="mailto:ksts@gmail.com?Subject=Problems In The School."] {
+  text-decoration: none;
+  color: green;
+}
+[href="tel:+233 000 000 0000"]:hover,
+[href="tel:+233 000 000 0000"]:focus,
+[href="mailto:ksts@gmail.com?Subject=Problems In The School."]:hover,
+[href="mailto:ksts@gmail.com?Subject=Problems In The School."]:focus {
+  text-decoration: underline;
+  color: hsl(120, 100%, 15%);
+}
+
+input[type] {
+  width: 100%;
+  height: 50px;
+  padding: 20px;
+  outline: 1px solid gold;
+  outline-offset: -3px;
+  /* border-radius: 10px; */
+}
+
+textarea {
+  width: 100%;
+  /* height: 50px; */
+  padding: 20px;
+  outline: 1px solid gold;
+  outline-offset: -3px;
+}
+
+button[type="submit"] {
+  width: 50%;
+  margin: auto 25%;
+  padding: 20px;
+  border-radius: 50px;
+  border-color: gold;
+  /* background-color: hsl(65, 100%, 49%); */
+  background: linear-gradient(
+    180deg,
+    hsla(65, 100%, 49%, 0.5),
+    hsl(60, 100%, 50%)
+  );
+
+  border: 2px;
+  font-size: 150%;
+  line-height: 10px;
+  cursor: pointer;
+}
+
+@media all and (max-width: 490px) {
+  button[type="submit"] {
+    width: 100%;
+    margin: auto;
+    padding: 15px;
+    border-radius: 20px;
+  }
+
+  #big-fieldset {
+    border-radius: 40px;
+    border: 3px solid green;
+    background: rgba(255, 255, 0, 0.562);
+    margin: 0 auto;
+    margin-bottom: 50px;
+  }
+}
+
+button[type="submit"]:hover,
+button[type="submit"]:focus {
+  /* background-color: hsla(65, 100%, 49%, 0.5); */
+  background: linear-gradient(185deg, hsl(60, 86%, 78%), hsl(60, 95%, 55%));
+  transition: color 0.3s ease-in-out 0s;
+  box-sizing: border-box;
+  border-color: hsl(60, 100%, 50%);
+  font-size: 20px;
+  /* box-shadow: none; */
+}
+
+/*========================================= End of Form Style =========================================== */
+
+/* ..........................Social Link Style................................... */
+
+/*
+/////////////////Contact Social links\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ 
+ */
+.contact-icons {
+  display: inline;
+  float: right;
+  /* position: relative;
+     bottom: 25px; */
+  margin: auto 20px;
+  font-size: 25px;
+}
+
+.contact-icons p {
+  display: inline;
+  margin: auto 5px;
+  box-sizing: content-box;
+}
+
+.contact-gmail {
+  color: brown;
+}
+
+.contact-telegram {
+  color: rgb(3, 127, 176);
+}
+
+.contact-messenger {
+  color: rgb(106, 3, 179);
+}
+
+.contact-whatsapp {
+  color: rgb(74, 180, 3);
+}
+
+.contact-gmail:hover,
+.contact-gmail:focus {
+  color: hsl(0, 59%, 54%);
+  transform: scale(1.2);
+}
+
+.contact-telegram:hover,
+.contact-telegram:focus {
+  color: hsl(197, 97%, 54%);
+  transform: scale(1.2);
+}
+
+.contact-messenger:hover,
+.contact-messenger:focus {
+  color: hsl(275, 97%, 54%);
+  transform: scale(1.2);
+}
+
+.contact-whatsapp:hover,
+.contact-whatsapp:focus {
+  color: hsl(96, 97%, 54%);
+  transform: scale(1.2);
+}
+/*
+/////////////////End of Contact Social links\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ 
+ */
+
+/* ==============================Footer Social Links======================= */
+.facebook-icon:hover {
+  color: blue;
+  transform: scale(1.3);
+  font-weight: 900;
+}
+.whatsapp-icon:hover {
+  color: darkgreen;
+  transform: scale(1.3);
+  font-weight: 900;
+}
+.twitter-icon:hover {
+  color: rgb(5, 154, 213);
+  transform: scale(1.3);
+  font-weight: 900;
+}
+.instagram-icon:hover {
+  color: rgb(128, 0, 96);
+  transform: scale(1.3);
+  font-weight: 900;
+}
+/* ==============================End of Footer Social Links======================= */
+
+/* ..........................End of Social Link Style................................... */
+/* .back-to-top{
+     font-size: 45px;
+     position: fixed;
+     right: 20px;
+     bottom: 70px;
+     background-color: linear-gradient(90deg,
+               rgba(255, 255, 255, 0) 0%,
+               rgba(255, 255, 255, 0.2) 25%,
+               rgba(255, 255, 255, 0.2) 75%,
+               rgba(255, 255, 255, 0) 100%);
+          box-shadow: 0 0 25px rgba(0, 0, 0, 0.1),
+               inset 0 0 1px rgba(255, 255, 255, 0.6);
+     scroll-behavior: smooth;
+          
+} */

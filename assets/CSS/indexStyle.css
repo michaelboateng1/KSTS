@@ -1,0 +1,752 @@
+/* ---------------------Home Page Style------------------------------ */
+
+/*<<<<<<<< Browser Preset >>>>>>>>>>>>*/
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  background-color: whitesmoke;
+  --primary-color: green;
+  --secoundary-color: yellow;
+}
+/*<<<<<<<< End of Browser Preset >>>>>>>>>>>>*/
+
+/*^^^^^ Margins between sections ^^^^^*/
+section {
+  margin-top: 60px;
+}
+
+#margin {
+  margin-top: 60px;
+}
+
+.no-margin {
+  margin: 10px;
+}
+
+.teachers-sec-margin {
+  margin: 25px 0;
+}
+/*^^^^^ End of Margins between sctions ^^^^^*/
+
+/* || HEADER LOGO */
+.header-logo {
+  padding-top: 35px;
+  padding-left: 30px;
+  position: relative;
+  bottom: 35px;
+  color: yellow;
+  font-family: "Raleway", sans-serif;
+  letter-spacing: 10px;
+  /* animation: logoname 2s 0.01ms ease-in; */
+  animation: logoname 1.5s 0.9s ease-in;
+  animation-fill-mode: backwards;
+  -o-animation-fill-mode: backwards;
+  -webkit-animation-fill-mode: backwards;
+}
+
+@keyframes logoname {
+  0% {
+    /* transform: translateY(-70px); */
+    opacity: 0;
+    perspective: 100%;
+    transform: scale(0.6);
+  }
+
+  50% {
+    opacity: 0.5;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.header-logo a {
+  text-decoration: none;
+  color: yellow;
+}
+
+/* || END OF HEADER LOGO */
+
+/* || BANNER */
+#banner {
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.4)),
+    url("../Gallery/images/Pictures/292229953_176742258128972_4671202987205061846_n.jpg");
+  background-size: cover, cover;
+  background-image: -o-linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.2)
+    ),
+    -moz-linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.2)),
+    -webkit-linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.2));
+  background-repeat: no-repeat;
+  background-position: top, center;
+  background-color: rgb(3, 126, 99);
+  background-attachment: scroll, fixed;
+  /* height: 540px; */
+  height: 639px;
+  border: 0.0625em;
+  border-bottom-style: solid;
+  filter: saturate(1.5);
+  -webkit-filter: saturate(1.5);
+}
+
+.banner {
+  overflow: hidden;
+  text-align: center;
+}
+
+.big-banner-title {
+  font-size: 54.88px;
+  font-weight: 900;
+  color: yellow;
+  font-variant: small-caps;
+  letter-spacing: 2px;
+  display: inline-block;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  top: 35%;
+  /* animation: bigschoolname 2s 0.01ms linear; */
+  animation: bigschoolname 1.5s 0.9s linear;
+  animation-fill-mode: backwards;
+  -o-animation-fill-mode: backwards;
+  -webkit-animation-fill-mode: backwards;
+  text-shadow: 2px 2px 2px black;
+}
+
+@keyframes bigschoolname {
+  0% {
+    transform: scale(0.5, 0.5);
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 0.5;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+/* ===| SCHOOL MOTTO |=== */
+#banner .motto {
+  position: absolute;
+  top: 330px;
+  left: 36%;
+  color: yellow;
+  font-weight: bolder;
+  line-height: 3px;
+  border: 2px double whitesmoke;
+  padding: 20px;
+  font-size: 1.25rem;
+  border-radius: 10px;
+  background: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 0) 0%,
+    rgba(255, 255, 255, 0.2) 25%,
+    rgba(255, 255, 255, 0.2) 75%,
+    rgba(0, 0, 0, 0) 100%
+  );
+  /* animation: motto 1.50s 1s ease-out; */
+  animation: motto 1.5s 0.9s ease-out;
+  animation-fill-mode: backwards;
+  -o-animation-fill-mode: backwards;
+  -webkit-animation-fill-mode: backwards;
+}
+
+@media only screen and (max-width: 1245px) {
+  #banner .motto {
+    top: 370px;
+  }
+}
+
+@keyframes motto {
+  0% {
+    opacity: 0;
+    perspective: 10px;
+  }
+
+  50% {
+    opacity: 0.5;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+#banner .motto > strong {
+  margin: auto 35px;
+  color: white;
+}
+
+.banner > #banner > div.motto > h3 {
+  position: relative;
+}
+
+.banner > #banner > div.motto > h3::before {
+  content: open-quote;
+  font-size: 3rem;
+  position: absolute;
+  top: -0.25em;
+  left: -0.3em;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.banner > #banner > div.motto > h3::after {
+  content: close-quote;
+  font-size: 3rem;
+  position: absolute;
+  top: -0.25em;
+  right: -0.3em;
+  font-family: "Times New Roman", Times, serif;
+}
+
+/*================== Hide Mobile Banner Image on Desktop =================*/
+#banner div > img {
+  display: none;
+}
+/*============== End of Hide Mobile Banner Image on Desktop =================*/
+
+/* ===| END OF SHOOL MOTTO |===*/
+
+/* ===| Mobile Banner |=== */
+@media (max-width: 991px) {
+  #banner {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.1)),
+      url(../Gallery/images/Pictures/300369626_187268807076317_2615970938522163740_n.jpg)
+        center/cover fixed no-repeat;
+    background-position: top;
+  }
+
+  .big-banner-title {
+    word-wrap: normal;
+    top: 22%;
+  }
+
+  .big-banner-title {
+    font-size: 250%;
+    display: inline;
+    left: 0.25rem;
+  }
+
+  #banner {
+    height: 510px;
+  }
+
+  #banner .motto {
+    display: none;
+  }
+
+  #banner div > img {
+    display: inline-block;
+    width: 30%;
+    position: relative;
+    top: 150px;
+    text-align: center;
+    margin: auto;
+    clear: both;
+    border: 10px solid green;
+    border-radius: 512.0005px;
+    outline: 4px solid yellow;
+    outline-offset: -6px;
+    animation-name: mobile-logo;
+    animation-duration: 2.6s;
+    animation-delay: 0.3ms;
+    animation-timing-function: ease-out;
+    animation-fill-mode: backwards;
+  }
+
+  @keyframes mobile-logo {
+    0% {
+      transform: translateX(-300px);
+      opacity: 0;
+    }
+
+    25% {
+      transform: rotateZ(360deg);
+      opacity: 0;
+    }
+
+    50% {
+      transform: scale(2, 2);
+      opacity: 0.5;
+    }
+
+    100% {
+      transform: scale(1, 1);
+    }
+  }
+}
+
+/*===================== Banner image width on small screen ====================*/
+@media screen and (max-width: 700px) {
+  #banner div > img {
+    width: 40%;
+  }
+}
+/*=================== End of Banner image width on small screen ====================*/
+
+/*================== Change the space between letters on samll screen ===================*/
+@media screen and (max-width: 330px) {
+  .big-banner-title {
+    letter-spacing: 0.5px;
+  }
+}
+/*=========== End of Change the space between letters on samll screen =============*/
+
+/* ===|End of Mobile Banner |=== */
+
+/* || END OF BANNER */
+
+/* || INFORMATION BAR */
+#info-bar {
+  background: rgb(1, 68, 79);
+}
+
+.info-bar {
+  display: flex;
+}
+
+.info-bar a {
+  margin: auto 20px;
+  text-decoration: none;
+  color: aliceblue;
+}
+
+.info-bar .new_part {
+  margin-left: auto;
+}
+
+/*============= Information Bar on Mobile ======================*/
+@media screen and (max-width: 398px) {
+  .info-bar a {
+    margin: auto 4px;
+  }
+}
+/*============= End of Information Bar on Mobile =================*/
+
+/* || END OF INFOMATION BAR */
+
+/* || HERO SECTION */
+.title {
+  font-size: 1rem;
+  text-transform: capitalize;
+  font-variant: small-caps;
+  font-weight: lighter;
+  margin: 20px;
+  margin-bottom: 0;
+  color: darkgreen;
+  display: inline-block;
+}
+
+.title::after {
+  content: "";
+  width: 100px;
+  height: 1px;
+  background-color: #888;
+  display: inline-block;
+  margin: 0 5px;
+  font-weight: lighter;
+  position: relative;
+  top: -4px;
+}
+
+.sub-title {
+  margin-left: 20px;
+  font-weight: bolder;
+  text-transform: capitalize;
+  color: green;
+  opacity: 0.8;
+  font-size: 2rem;
+  margin-top: 0;
+}
+
+.hero-container {
+  display: flex;
+  flex-wrap: wrap;
+  flex: 1 1 100px;
+  width: 100%;
+  gap: 20px;
+  justify-content: space-evenly;
+  align-items: center;
+  align-content: center;
+  overflow: hidden;
+}
+
+.hero-card {
+  flex: 1 1 310px;
+  margin: 15px;
+}
+
+.hero-container .hero-card img {
+  padding: 10px;
+  width: 100%;
+  height: auto;
+  background-color: yellow;
+  border-radius: 20px;
+  transition: all 0.2s linear, background 0.3s linear;
+  flex: 1 1 100%;
+}
+
+.hero-card img:hover {
+  transform: scale(1);
+  box-shadow: 10px 10px 10px #333;
+  padding: 0;
+  border-radius: 0;
+  background-color: green;
+  cursor: pointer;
+}
+
+/* || END OF HERO SECTION */
+
+/* || SCHOOL ANTHEM SECTION */
+.blur-bg {
+  text-align: center;
+  background: url(../Gallery/images/284711278_585203002935725_6330529250259203274_n.jpg);
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+  filter: saturate(1.7) blur(5.5px);
+  -webkit-filter: saturate(1.7) blur(5.5px);
+  height: 450px;
+  margin: 0 30px;
+}
+
+#anthem-container {
+  position: relative;
+  overflow: hidden;
+}
+
+#anthem-img {
+  margin: 20px;
+  width: 400px;
+  transition: all 0.3s linear;
+  border: 10px solid yellow;
+  border-radius: 5px;
+  margin-top: -462.4px;
+}
+
+#anthem-img:hover,
+#anthem-img:focus {
+  box-shadow: 20px -25px 5em whitesmoke;
+  border-radius: 0;
+}
+
+.anthem-content {
+  filter: saturate(1.5);
+  -webkit-filter: saturate(1.5);
+  display: grid;
+  place-content: center;
+}
+
+/*================== Anthem on lager screen ===================*/
+@media screen and (min-width: 1450px) {
+  .blur-bg {
+    filter: saturate(2.5) blur(20px);
+    -webkit-filter: saturate(2.5) blur(20px);
+  }
+}
+/*================= End of Anthem on lager screen ====================*/
+
+@media screen and (max-width: 690px) {
+  .school-anthem {
+    display: none;
+  }
+}
+/*=============== End of Shool Anthem on Mobile ===================*/
+
+/* || END OF SCHOOL ANTHEM SECTION */
+
+/* || HEAD TEACHERS SECTION */
+
+/*===================== Hide mobile style on Desktop ==================*/
+.mobile-teachers-container {
+  display: none;
+}
+/*============= End of Hide mobile style on Desktop ===================*/
+
+.teachers-container {
+  display: flex;
+  justify-content: flex-start;
+  margin-left: 20px;
+  gap: 10px;
+  align-items: center;
+  align-content: center;
+}
+
+.teachers-card > img {
+  filter: saturate(1.7) brightness(110%);
+  display: block;
+  border-top: 6px solid yellow;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  width: 400px;
+  height: 380px;
+  margin-right: 10px;
+}
+
+.teachers-card > h5 {
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 20px;
+}
+
+.teachers-card::before {
+  content: "";
+  background: green;
+  height: 500px;
+  width: 400px;
+  position: absolute;
+  z-index: -2;
+  border-radius: 45px;
+  border: 6px solid yellow;
+}
+
+.teachers-card > h5 p {
+  display: inline-block;
+}
+
+.teachers-card > h5 {
+  color: green;
+  font-weight: 900;
+  display: block;
+  background-color: yellow;
+  border-radius: 10px;
+  margin: 15px 50px;
+  padding: 10px 10px 0 10px;
+}
+
+/* ===| Head Teachers Section On Moblile |===*/
+@media screen and (max-width: 991px) {
+  .teachers-container {
+    display: none;
+  }
+
+  .mobile-teachers-container {
+    display: flex;
+    gap: 30px;
+    justify-content: flex-start;
+    align-items: center;
+    overflow-x: scroll;
+    margin: 0 30px;
+    height: 550px;
+  }
+
+  .teachers-card img {
+    width: 250px;
+    height: 300px;
+    filter: saturate(1.7) brightness(110%);
+    display: block;
+    border-top: 6px solid green;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    margin-right: 0;
+  }
+
+  .teachers-card {
+    position: relative;
+  }
+
+  .teachers-card::before {
+    content: "";
+    background: yellow;
+    width: 250px;
+    height: 425px;
+    position: absolute;
+    padding: 0;
+    z-index: -2;
+    border-color: green;
+  }
+
+  .teachers-card > h5 p {
+    display: inline-block;
+  }
+
+  .teachers-card > h5 {
+    border-radius: 10px;
+    margin: 25px 20px;
+    padding: 10px 10px 0 10px;
+    display: block;
+    font-size: small;
+  }
+
+  .teachers-card > h5 {
+    color: whitesmoke;
+    background-color: green;
+  }
+}
+
+/* ===| End Of Head Teachers Section On Moblile |===*/
+
+/* || END OF HEAD TEACHERS SECTION */
+
+/* || COURSES IN THE SCHOOL */
+.pro-container {
+  overflow: hidden;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  align-content: center;
+}
+
+.course > a img {
+  height: 330px;
+  padding: 20px;
+  width: 100%;
+  padding-bottom: 0;
+  border-radius: 30px 30px 0 0;
+  transition: border-radius 2s ease-out;
+}
+
+.course > figure {
+  text-align: center;
+  background-color: green;
+  color: yellow;
+  opacity: 0.8;
+  margin: 10px 20px;
+  margin-top: 0;
+  padding: 10px;
+  border-radius: 0 0 10px 10px;
+  transition: all 1.2s ease-out;
+}
+
+.course:hover figure,
+.course:focus-within figure {
+  transform: translateY(-150px);
+  color: green;
+  background: yellow;
+  border-radius: 0;
+  cursor: pointer;
+}
+.course:hover img,
+.course:focus img {
+  border-radius: 0;
+  cursor: pointer;
+}
+
+.course > figure h6 {
+  font-size: 1.5rem;
+}
+
+.course {
+  transition: all 0.3s ease-out;
+  flex: 1 1 25rem;
+}
+
+.course:hover,
+.course:focus-within {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+/* || END OF COURSES IN THE SCHOOL */
+
+/* || STUDENTS LIFE */
+.activity-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  margin: 30px;
+}
+
+.activity-container > div > figure > a > img {
+  width: 100%;
+  height: 300px;
+  border: 0.5em solid greenyellow;
+  border-radius: 1.56em;
+  cursor: pointer;
+}
+
+.activity-container > div > figure > a {
+  text-decoration: none;
+}
+
+.activity-container > div > figure > a > figcaption {
+  font-size: 32px;
+  font-weight: 600;
+  text-align: center;
+  color: yellow;
+  opacity: 0.8;
+  transition: all 1s ease-out;
+  background: green;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+.activity-container > div:hover a figcaption,
+.activity-container > div:focus-within a figcaption {
+  text-decoration: underline;
+  transform: translateY(-100px);
+  color: green;
+  background: yellow;
+  border-radius: 0;
+  cursor: pointer;
+}
+
+.activity-container div {
+  flex: 1 1 100px;
+  margin-right: 10px;
+  /* display: grid;
+     justify-content: center;
+     align-content: center; */
+}
+
+/* .activity-card:last-child{
+     border-color: blue;
+} */
+
+@media screen and (max-width: 199px) {
+  .activity-container > div {
+    margin-right: 0;
+  }
+}
+
+@media all and (min-width: 930px) and (max-width: 1188px) {
+  .activity-container div:last-child {
+    display: none;
+  }
+}
+/* || END OF STUDENTS LIFE */
+
+/* || SOCIAL ICONS  */
+
+.bxl-youtube:hover,
+.bxl-youtube:focus {
+  color: red;
+  font-weight: 900;
+  transform: scale(1.3);
+}
+
+.bxl-facebook:hover,
+.bxl-facebook:focus {
+  color: blue;
+  font-weight: 900;
+  transform: scale(1.3);
+}
+
+.bxl-instagram:hover,
+.bxl-instagram:focus {
+  color: rgb(128, 0, 96);
+  font-weight: 900;
+  transform: scale(1.3);
+}
+
+.bxl-tiktok:hover,
+.bxl-tiktok:focus {
+  color: rgb(15, 15, 15);
+  font-weight: 900;
+  transform: scale(1.3);
+}
+/* || End of SOCIAL ICONS */

@@ -1,0 +1,200 @@
+/*
+================================================================================================================================================
+ ====================================================================== ABOUT PAGE STYLE =======================================================
+ /* <<<<<<<<<< Browser Reset >>>>>>>>>> */
+*/ * {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+img {
+  display: block;
+  margin-bottom: 0;
+}
+
+/* <<<<<<<<<< Browser Reset >>>>>>>>>> */
+
+:root {
+  background-color: whitesmoke;
+  /* background-color: rgb(252, 252, 208); */
+}
+
+/* ============================================================== TOP TITLE =================================================================*/
+.about-head {
+  text-align: center;
+  color: darkgreen;
+  font-size: 35px;
+  padding: 10px;
+  text-transform: capitalize;
+}
+
+.first-article {
+  margin-top: 70px;
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0.2) 25%,
+    rgba(255, 255, 255, 0.2) 75%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.1),
+    inset 0 0 1px rgba(255, 255, 255, 0.6);
+  color: green;
+}
+
+.first-article p {
+  padding: 0 0 20px;
+  text-align: center;
+}
+
+/*===================================================== END OF TOP TITLE STYLE ============================================================== */
+
+/*===================================================== SCHOOL HISTORY SECTION ============================================================== */
+.history {
+  margin: 20px;
+  margin-top: 10px;
+  padding: 20px;
+  background: green;
+  color: white;
+  border: 5px ridge yellow;
+}
+
+.history-title {
+  font-weight: lighter;
+  margin: 0;
+  padding: 0;
+  color: yellow;
+}
+
+#first-paragrap::first-letter {
+  font-size: 2rem;
+  color: yellow;
+  font-weight: bolder;
+}
+
+.first-paragraph {
+  letter-spacing: 0.2rem;
+}
+
+.history > p {
+  line-height: 2;
+  text-align: left;
+}
+
+.history > p img {
+  float: right;
+  margin: 20px;
+  border-radius: 20px;
+}
+
+img[src="./assets/Gallery/images/285456091_464405382111850_6940588645061035992_n.jpg"] {
+  filter: saturate(1.6);
+  animation-name: campus;
+}
+
+@keyframes campus {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@media screen and (max-width: 530px) {
+  .history > p img {
+    margin: 5px;
+    width: 100%;
+  }
+}
+
+/*================================================== END OF SCHOOL HISTORY SECTION ========================================================== */
+
+/* ============================================================= COURSES SECTION ============================================================ */
+.courses h3 {
+  text-decoration: underline;
+  text-align: left;
+  color: yellow;
+  overflow: hidden;
+}
+
+.courses > ol > li {
+  list-style-type: none;
+}
+
+.elective {
+  font-size: 20px;
+  letter-spacing: 0.3rem;
+}
+
+details {
+  cursor: pointer;
+}
+
+ul > li {
+  list-style-type: none;
+}
+
+.bi-check-circle-fill,
+.list,
+.bi-check-square {
+  padding: 10px;
+}
+
+/* ========================================================= END OF COURSES SECTION ========================================================= */
+
+/* =========================================================== INFORMATION SECTION ========================================================= */
+.mission > h3,
+.vision > h3,
+.location > h3 {
+  text-decoration: underline;
+  text-align: left;
+  color: yellow;
+}
+
+.mission > p,
+.vision > p,
+.location > p {
+  padding: 10px 0 0;
+}
+
+@media screen and (max-width: 335px) {
+  .location > pre {
+    display: none;
+  }
+}
+
+/* ========================================================= END OF INFORMATION SECTION ===================================================== */
+
+/* ========================================================= SOCIAL ICONS =================================================================== */
+
+.whatsapp-icon:hover,
+.whatsapp-icon:focus {
+  color: rgb(4, 218, 4);
+  font-weight: 900;
+  transform: scale(1.3);
+}
+
+.twitter-icon:hover,
+.twitter-icon:hover {
+  color: rgb(5, 154, 213);
+  font-weight: 900;
+  transform: scale(1.3);
+}
+
+.instagram-icon:hover,
+.instagram-icon:focus {
+  color: rgb(128, 0, 96);
+  font-weight: 900;
+  transform: scale(1.3);
+}
+
+.facebook-icon:focus,
+.facebook-icon:hover {
+  color: blue;
+  font-weight: 900;
+  transform: scale(1.3);
+}
+
+/* ========================================================= END OF SOCIAL ICONS ============================================================ */
